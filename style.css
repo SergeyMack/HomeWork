@@ -1,0 +1,30 @@
+body{
+    background-color: aqua;
+}
+#PartOne{
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: red;
+}
+span{
+    border-radius: 5px;
+    color: aqua;
+}
+li{
+    background-color: purple;
+    margin-top:  5px;
+    border-radius: 5px;
+}
+ol{
+    list-style-type: none;
+    counter-reset: number;
+    color: aqua;
+    padding: 10px 25px;
+    margin-top: 350px;
+}    
+li::before{
+    margin-left: 10px;
+    content: counter(number)". ";
+    counter-increment: number; 
+    background-color: purple;  
+}
